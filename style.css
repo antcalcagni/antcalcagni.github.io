@@ -1,0 +1,185 @@
+.instilogo {
+    height: 50px;
+    filter: grayscale(20%);
+}
+
+a:hover {
+    /* font-weight: 400; */
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    /* color: #444; */
+}
+
+
+.noter {
+    font-size: 9pt;
+}
+
+.tagsep {
+    padding: 4px;
+}
+
+.tag {
+    padding-right: 2px;
+}
+
+.confshort {
+    font-weight: 300;
+}
+
+.conf {
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.paper {
+    border-left: 2px solid #ddd;
+/*    font-style:italic;*/
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.prompt {
+  animation: blink 2s step-start infinite;
+  color: white;
+  font-family: monospace;
+}
+
+.profilepic {
+    width: 200px;
+    height: 280px;
+    border-radius: 20%;
+    background-image: url('images/IMG-20240903-WA0039b.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*filter: grayscale(100%); */
+}
+
+.profilepic2 {
+    width: 200px;
+    border-radius: 20%;
+}
+
+
+@media (min-width: 768px) and (max-width: 1800px) {
+    .fixed-posi {
+        /* width: 50%;
+            margin-left: 50%;
+            min-height:100%; */
+        position: fixed;
+    }
+}
+
+
+
+/*@media only screen and (max-width: 900px) {
+    .allstuff {
+        padding-top: 0px !important;
+    }
+
+    .allstuffp {
+        padding-top: 0px !important;
+    }
+
+    .profilepic {
+        width: 90px;
+        border-radius: 40%;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    
+    }
+
+    .menur {
+        padding-top: 18px !important;
+    }
+
+}*/
+
+@media (max-width: 991px), (min-width: 2000px) {
+    .fixed-posi {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .fixed-posi .menur,
+    .fixed-posi .menur + div,
+    .fixed-posi .menur + div + div,
+    .fixed-posi .menur + div + div + div,
+    .fixed-posi .menur + div + div + div + div {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .profilepic {
+        display: none;
+    }
+}
+
+/* .thisauthor {
+          color: #111;
+          text-decoration: underline;
+    } */
+    
+/* Tables */
+table {
+  table-layout: fixed;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  width: 100%;
+  /*border: 1px solid #e5e5e5;*/
+  border-collapse: collapse;
+}
+
+td {
+  padding: .25rem .5rem;
+  text-align: justify;
+}
+
+th {
+  padding: .25rem .5rem;
+  font-size: 15px;
+  /*border: 1px solid #e5e5e5;*/
+}
+
+.alternating tbody tr:nth-child(odd) td,
+.alternating tbody tr:nth-child(odd) th {
+  background-color: #e6e6e6;
+}
+
+.static  {
+  background-color: #f5f5f5;
+}
+
+.static2  {
+  background-color: #fcf8e8;
+}
+
+.static3  {
+  background-color: #ffdab9;
+}
+
+.row-icon {
+  width: 16%;
+}
+.row-icon2 {
+  width: 10%;
+}
+.row-text {
+  width: 80%;
+}
+.row-links {
+  width: 15%;
+}
+.row-illust {
+  width: 40%;
+}
+
